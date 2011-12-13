@@ -13,7 +13,7 @@
   <![endif]-->
 
   <!-- Le styles -->
-  <link href="bootstrap/bootstrap.css" rel="stylesheet">
+  <link href="bootstrap.css" rel="stylesheet">
   <style type="text/css">
   body {
     padding-top: 60px;
