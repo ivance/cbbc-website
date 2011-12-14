@@ -13,22 +13,22 @@ function href_link( $main_page ){
 
 function router($pageUrl,$url){
 	$status = ROUTER_STATUS_NO_MATCH;
-	foreach($pageUrl as $pattern => $currentPage){
+	foreach($pageUrl as $pattern => $classFile){
 		$match = preg_match( $pattern, $url, $matches);
 
 		if($match == 1){
 			$status = ROUTER_STATUS_SUCCESS;
-			$className = PAGE_CLASS_NAME_PREFIX.ucwords($currentPage);
+			$className = PAGE_CLASS_NAME_PREFIX.ucwords($classFile);
 			
-			if(file_exists( DIR_PAGE.$currentPage.'.php' )){
-				include( DIR_PAGE.$currentPage.'.php' );
+			if(file_exists( DIR_PAGE.$classFile.'.php' )){
+				include( DIR_PAGE.$classFile.'.php' );
 			}
 
 			if (class_exists($className)) {
 				$page = new $className();
 
 				if(!empty($_POST)){
-					$page->executePost();
+					$page->executePost($_POST);
 				}else{
 					$page->executeGet();
 				}
