@@ -8,10 +8,10 @@ class cbbcPageBase{
 	protected $_tplData = '';
 
 	protected function _render(){
-		$tplFile = get_file_position(DIR_TEMPLATE,'common/html_page.php');
-		if($tplFile !== false){
-			extract($this->_tplData,EXTR_PREFIX_ALL,'tpl');
-			require $tplFile;
+		extract($this->_tplData,EXTR_PREFIX_ALL,'tpl');
+
+		if(file_exists( DIR_TEMPLATE_COMMON.'html_page.php' )){
+			include( DIR_TEMPLATE_COMMON.'html_page.php' );
 		}
 	}
 

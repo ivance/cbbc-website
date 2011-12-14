@@ -7,17 +7,8 @@ function page_redirect( $url ){
 }
 
 function href_link( $main_page ){
-	$url = HTTP_SERVER.'/index.php/'.$main_page;
+	$url = HTTP_SERVER.'index.php/'.$main_page;
 	return $url;
-}
-
-function get_file_position( $dir , $file ){
-	$pos = $dir.'/'.$file;
-	if(file_exists($pos)){
-		return $pos;
-	}else{
-		return false;
-	}
 }
 
 function router($pageUrl,$url){
@@ -27,12 +18,10 @@ function router($pageUrl,$url){
 
 		if($match == 1){
 			$status = ROUTER_STATUS_SUCCESS;
-
-			$filePos = get_file_position(DIR_PAGE,$currentPage.'.php');
 			$className = PAGE_CLASS_NAME_PREFIX.ucwords($currentPage);
-
-			if($filePos !== false){
-				include($filePos);
+			
+			if(file_exists( DIR_PAGE.$currentPage.'.php' )){
+				include( DIR_PAGE.$currentPage.'.php' );
 			}
 
 			if (class_exists($className)) {
@@ -43,6 +32,7 @@ function router($pageUrl,$url){
 				}else{
 					$page->executeGet();
 				}
+				
 			}else{
 				$status = ROUTER_STATUS_FILE_ERROR;
 			}

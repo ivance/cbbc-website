@@ -9,6 +9,7 @@ include 'application_top.php';
 $pageUrl = array(
 	'/admin\/index.php\/home(\/*)$/i' => 'home',
 	'/admin\/index.php\/news(\/*)$/i' => 'news',
+	'/admin\/index.php\/company(\/*)$/i' => 'company',
 );
 
 $result = router($pageUrl,$_SERVER['REQUEST_URI']);
@@ -19,7 +20,7 @@ switch ($result){
 		break;
 	
 	case ROUTER_STATUS_FILE_ERROR:
-		die();
+		die('file error');
 		break;
 			
 	case ROUTER_STATUS_SUCCESS:
