@@ -1,6 +1,11 @@
-<div class="hero-unit">
-	<h1>CBBC Website Control Panel</h1>
-	<p><?php echo ucwords($currentPage)?></p>
-</div>
+<!-- content-bof -->
+<div class="content">
 
-<div class="row"></div>
+	<div class="hero-unit">
+		<h1><?php echo ucwords($currentPage)?></h1>
+	</div>
+
+	<div class="row"></div>
+
+</div>
+<!-- content-eof -->

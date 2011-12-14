@@ -8,15 +8,9 @@
     
     <?php include 'page_sidebar.php';?>
 
-    <!-- content-bof -->
-    <div class="content">
+    <?php include 'page_layout.php';?>
 
-      <?php include 'page_layout.php';?>
-
-      <?php include 'page_footer.php';?>
-
-    </div>
-    <!-- content-eof -->
+    <?php include 'page_footer.php';?>
 
   </div>
 
