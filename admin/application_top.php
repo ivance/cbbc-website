@@ -3,6 +3,7 @@
 if (!defined('ENVIRONMENT')) die('Illegal Access');
 
 include 'function_admin.php';
+include_once 'define.php';
 
 if (defined('ENVIRONMENT')){
 	switch (ENVIRONMENT){

@@ -5,27 +5,28 @@ if (!defined('ENVIRONMENT')) die();
 
 include 'application_top.php';
 
-$currentPage = $_GET['main_page'];
-$filePos = get_file_position(DIR_PAGE,$currentPage.'.php');
-$className = PAGE_CLASS_NAME_PREFIX.ucwords($currentPage);
 
-if($filePos === false){
-  if($currentPage == DEFAULT_MAIN_PAGE){
-  	die();
-  }else{
-  	page_redirect(href_link(DEFAULT_MAIN_PAGE));
-  }
-}
+$pageUrl = array(
+	'/admin\/index.php\/home(\/*)$/i' => 'home',
+	'/admin\/index.php\/news(\/*)$/i' => 'news',
+);
 
-include($filePos);
+$result = router($pageUrl,$_SERVER['REQUEST_URI']);
 
-if (class_exists($className)) {
-	$page = new $className();
+switch ($result){
+	case ROUTER_STATUS_NO_MATCH:
+		page_redirect(href_link(DEFAULT_MAIN_PAGE));
+		break;
+	
+	case ROUTER_STATUS_FILE_ERROR:
+		die();
+		break;
+			
+	case ROUTER_STATUS_SUCCESS:
+		die();
+		break;
 
-	if(!empty($_POST)){
-		$page->executePost();
-	}else{
-		$page->executeGet();
-	}
+	default:
+		die();
 }
 ?>
