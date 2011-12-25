@@ -6,7 +6,7 @@ define( 'DEFAULT_MAIN_PAGE' , 'home' );
 define( 'PAGE_CLASS_NAME_PREFIX' , 'cbbcPage' );
 
 //define( 'HTTP_SERVER' , 'http://localhost/cbbc-website/admin' );
-define( 'HTTP_SERVER' , 'http://localhost/cbbc-website/admin/' );
+define( 'HTTP_SERVER' , 'http://localhost:8888/cbbc-website/admin/' );
 //define( 'DIR_PROJ' , 'D:\xampp\htdocs\cbbc-website\admin\\' );
 define( 'DIR_PROJ' , '/Users/ivance/htdocs/cbbc-website/admin/' );
 
