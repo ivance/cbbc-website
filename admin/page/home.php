@@ -10,6 +10,11 @@ class cbbcPageHome extends cbbcPageBase{
 		parent::__construct();
 		$this->_currentPage = 'home';
 	}
+
+	public function executeGet(){
+		$this->_tplData['post_url'] = href_link($this->_currentPage);
+		parent::executeGet();
+	}
 	
 }
 ?>
