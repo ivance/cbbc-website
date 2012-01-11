@@ -8,8 +8,8 @@ include 'application_top.php';
 
 $pageUrl = array(
 	'/admin\/index.php\/home(\/*)$/i' => 'home',
-	'/admin\/index.php\/news(\/*)$/i' => 'news',
 	'/admin\/index.php\/company(\/*)$/i' => 'company',
+	'/admin\/index.php\/project(\/*)$/i' => 'project',
 );
 
 $result = router($pageUrl,$_SERVER['REQUEST_URI']);

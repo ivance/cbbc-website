@@ -1,7 +1,6 @@
 <?php
 $mainPageArr = array(
 	DEFAULT_MAIN_PAGE,
-	'news',
 	'company',
 	'project',
 	'team',

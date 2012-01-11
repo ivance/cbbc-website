@@ -8,9 +8,6 @@ class cbbcPageBase{
 	protected $_tplData = '';
 	protected $_config = array();
 	protected $_alert = '';
-	protected $_configCol = array(
-		'news_link','blog_link','platform_link','sina_link',
-		);
 
 	protected function _render(){
 		extract($this->_tplData,EXTR_PREFIX_ALL,'tpl');
@@ -59,10 +56,8 @@ class cbbcPageBase{
 	}
 
 	protected function _modifyConfig($param){
-		foreach($this->_configCol as $col){
-			if(isset($param[$col])){
-				$this->_config[$col] = $param[$col];
-			}
+		foreach($param as $key => $value){
+			$this->_config[$key] = $value;
 		}
 	}
 

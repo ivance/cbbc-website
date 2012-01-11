@@ -4,11 +4,11 @@ if (!defined('ENVIRONMENT')) die('Illegal Access');
 
 include_once 'base.php';
 
-class cbbcPageCompany extends cbbcPageBase{
+class cbbcPageProject extends cbbcPageBase{
 
 	public function __construct(){
 		parent::__construct();
-		$this->_currentPage = 'company';
+		$this->_currentPage = 'project';
 	}
 
 	public function executeGet(){
