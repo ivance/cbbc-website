@@ -13,6 +13,7 @@
   <![endif]-->
 
   <!-- Le styles -->
+  <script type="text/javascript" src="<?php echo HTTP_RESOURCE_PATH.'jquery-1.6.1.min.js'?>"></script>
   <link href="<?php echo HTTP_RESOURCE_PATH.'bootstrap.css'?>" rel="stylesheet">
   <style type="text/css">
   body {
