@@ -2,7 +2,7 @@
 
 define( 'ENVIRONMENT' , 'development' );
 
-define( 'DEFAULT_MAIN_PAGE' , 'home' );
+define( 'DEFAULT_MAIN_PAGE' , 'common' );
 define( 'PAGE_CLASS_NAME_PREFIX' , 'cbbcPage' );
 
 //define( 'HTTP_SERVER' , 'http://localhost/cbbc-website/admin' );

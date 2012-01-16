@@ -56,8 +56,10 @@ class cbbcPageBase{
 	}
 
 	protected function _modifyConfig($param){
-		foreach($param as $key => $value){
-			$this->_config[$key] = $value;
+		if(is_array($param)){
+			foreach($param as $key => $value){
+				$this->_config[$key] = $value;
+			}
 		}
 	}
 

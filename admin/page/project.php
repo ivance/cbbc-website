@@ -48,6 +48,7 @@ class cbbcPageProject extends cbbcPageBase{
 			unset($this->_config['project_list'][$saveId]);
 		}
 
+		$param = array();
 		parent::executePost( $param );
 	}
 	

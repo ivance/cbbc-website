@@ -7,9 +7,14 @@ include 'application_top.php';
 
 
 $pageUrl = array(
+	'/admin\/index.php\/common(\/*)$/i' => 'common',
 	'/admin\/index.php\/home(\/*)$/i' => 'home',
 	'/admin\/index.php\/company(\/*)$/i' => 'company',
 	'/admin\/index.php\/project(\/*)$/i' => 'project',
+	'/admin\/index.php\/team(\/*)$/i' => 'team',
+	'/admin\/index.php\/partner(\/*)$/i' => 'partner',
+	'/admin\/index.php\/service(\/*)$/i' => 'service',
+	'/admin\/index.php\/contact(\/*)$/i' => 'contact',
 );
 
 $result = router($pageUrl,$_SERVER['REQUEST_URI']);

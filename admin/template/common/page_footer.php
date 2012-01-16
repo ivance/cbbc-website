@@ -1,1 +1,1 @@
-<footer><p>&copy; Ivance & Shawn 2011</p></footer>
+<footer><p>&copy; Ivance & Shawn 2012</p></footer>

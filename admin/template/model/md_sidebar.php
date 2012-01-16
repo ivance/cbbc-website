@@ -1,9 +1,11 @@
 <?php
 $mainPageArr = array(
 	DEFAULT_MAIN_PAGE,
+	'home',
 	'company',
 	'project',
 	'team',
+	'partner',
 	'service',
 	'contact',
 );
