@@ -7,6 +7,7 @@ include_once 'base.php';
 class cbbcPageProject extends cbbcPageBase{
 
 	public function __construct(){
+		validatePermission();
 		parent::__construct();
 		$this->_currentPage = 'project';
 	}

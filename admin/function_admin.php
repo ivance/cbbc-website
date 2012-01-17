@@ -25,6 +25,7 @@ function router($pageUrl,$url){
 			}
 
 			if (class_exists($className)) {
+				session_start();
 				$page = new $className();
 
 				if(!empty($_POST)){
@@ -42,5 +43,26 @@ function router($pageUrl,$url){
 	}
 
 	return $status;
+}
+
+function validatePermission(){
+	if(!isset($_SESSION['user_name']) || $_SESSION['user_name'] == ''){
+		page_redirect(href_link( 'login' ));
+	}
+}
+
+function valideLogin($param,$str){
+	$md5 = md5($param['user_name'].DB_FILE.$param['password']);
+	if($md5 == $str){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+function alreadylogin(){
+	if(isset($_SESSION['user_name']) && $_SESSION['user_name'] != ''){
+		page_redirect(href_link( 'common' ));
+	}
 }
 ?>

@@ -7,6 +7,9 @@ include 'application_top.php';
 
 
 $pageUrl = array(
+	'/admin\/index.php\/login(\/*)$/i' => 'login',
+	'/admin\/index.php\/logoff(\/*)$/i' => 'logoff',
+	'/admin\/index.php\/change(\/*)$/i' => 'change',
 	'/admin\/index.php\/common(\/*)$/i' => 'common',
 	'/admin\/index.php\/home(\/*)$/i' => 'home',
 	'/admin\/index.php\/company(\/*)$/i' => 'company',
