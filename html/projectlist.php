@@ -74,7 +74,7 @@
 					<ul class="project_items">
 						<?php foreach($config->project_list as $project){?>
 						<li class="project_item">
-							<div class="image"><img src="../image/<?php echo $project->pic?>" width="60" alt=""></div>
+							<div class="image"><img src="../image/<?php echo $project->pic?>" width="40" alt=""></div>
 							<h2 class="name"><?php echo $project->title?></h2>
 							<p class="info"><?php echo $project->type?> / <?php echo $project->area?> / <?php echo $project->time?></p>
 							<div class="project_detail">

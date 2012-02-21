@@ -34,14 +34,14 @@
 			
 			<?php include('common/sidebar.php') ?>
 
-			<div id="r-col" class="span8 offset4">
+			<div id="r-col" class="span12">
 				<div id="scrollbar_container">  
 				    <div id="scrollbar_track"><div id="scrollbar_handle"></div></div>  
-				    <div id="scrollbar_content">
+				    <div id="scrollbar_content" style="margin-right:150px">
 						<ul class="media-list partners-list">
 						<?php foreach($config->partner_list as $partner){?>
 						<li class="partner">
-							<div class="image"><img src="../image/<?php echo $partner->pic?>" width="200" alt=""></div>
+							<div class="image"><img src="../image/<?php echo $partner->pic?>" width="227" alt=""></div>
 							<?php echo $partner->text?>
 						</li>
 						<?php }?>

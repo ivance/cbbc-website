@@ -19,6 +19,10 @@
 		left: 57px;
 		position: relative;
 	}
+	.clients-list li{
+		line-height:29px;
+		color:#ffffff;
+	}
 	
 	</style>
 </head>
@@ -34,7 +38,7 @@
 			
 			<?php include('common/sidebar.php') ?>
 			
-			<div id="r-col" class="span8 offset5">
+			<div id="r-col" class="span9">
 				<div id="scrollbar_container-fluid">  
 				    <div id="scrollbar_track"><div id="scrollbar_handle"></div></div>  
 				    <div id="scrollbar_content">

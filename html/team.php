@@ -38,14 +38,15 @@ $team_pic = explode(';',$config->team_pic);
 			
 			<?php include('common/sidebar.php') ?>
 			
-			<div id="r-col" class="span10 offset2">
+			<div id="r-col" class="span12">
 			<div id="team_pic" class="span5 pull-left">
 				<?php foreach($team_pic as $pic){?>
-				<a><img src="../image/<?php echo $pic?>" height="300" alt=""></a>
+				<a><img src="../image/<?php echo $pic?>" height="340" alt=""></a>
 				<?php } ?>
 			</div>
-			<div class="span5 offset5 pull-right">
-					<p><?php echo $config->team_text?></p>
+			<div class="span5" style="margin-left:290px">
+			<p class="header" style="font-size:20px;">TEAM</p>
+					<p style="text-align:justify;"><?php echo $config->team_text?></p>
 			</div>
 			</div>
 		</div>

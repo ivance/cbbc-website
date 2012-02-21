@@ -25,7 +25,7 @@
 			
 			<?php include('common/sidebar.php') ?>
 			
-			<div id="r-col" class="span6 offset5">
+			<div id="r-col" class="span11">
 					
 			<?php echo $config->contact_text?>
 

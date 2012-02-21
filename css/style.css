@@ -186,7 +186,7 @@ body {
   background-position: top center;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: normal;
   line-height: 18px;
   color: #e6e6e6;
@@ -615,8 +615,8 @@ html, body {
   display: block;
 }
 .project_items .project_item {
-  margin-bottom: 10px;
-  height: 60px;
+  margin-bottom: 1px;
+  height: 40px;
   padding: 2px;
   cursor: pointer;
   zoom: 1;
@@ -692,10 +692,13 @@ html, body {
 }
 .media-list.partners-list .name {
   text-align: right;
-  line-height: 18px;
+  font-size:20px;
+  color:#ffffff;
+  font-style:Italic;
+  line-height: 34px;
 }
 .media-list.partners-list .info {
-  padding-left: 220px;
+  padding-left: 270px;
   text-align: justify;
 }
 #scrollbar_container {
@@ -725,15 +728,15 @@ html, body {
 #scrollbar_track {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 45px;
   height: 100%;
   width: 6px;
-  background-color: #dddddd;
+  background-color: #777777;
   cursor: move;
 }
 #scrollbar_handle {
   width: 6px;
-  background-color: #5c92e7;
+  background-color: #ffffff;
   cursor: move;
   filter: alpha(opacity=90);
   -khtml-opacity: 0.9;
@@ -742,7 +745,7 @@ html, body {
 }
 #scrollbar_content {
   overflow: hidden;
-  height: 360px;
+  height: 365px;
 }
 .span11 #scrollbar_content {
   width: 620px;
@@ -754,7 +757,7 @@ html, body {
   width: 500px;
 }
 .span8 #scrollbar_content {
-  width: 440px;
+  width: 400px;
 }
 .span7 #scrollbar_content {
   width: 380px;

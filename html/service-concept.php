@@ -38,10 +38,10 @@
 			<div id="service-concept" class="span6">
 				<img src="../css/images/service.png" alt="">
 			</div>
-			<div id="r-col" class="span6">
+			<div id="r-col" class="span5" style="margin-right:110px">
 				<div id="scrollbar_container-fluid">  
 				    <div id="scrollbar_track"><div id="scrollbar_handle"></div></div>  
-				    <div id="scrollbar_content">
+				    <div id="scrollbar_content" style="text-align:justify;">
 						<p><?php echo $config->service_concept?></p>
 					</div>
 				</div>

@@ -1,6 +1,6 @@
 	<div id="footer" >
 		<div id="footer-inner" class="container-fluid">
-		<div class="content">
+		<div class="content" style="padding-bottom:84px;">
 			
 				<?php if($page == 'home'){?>
 				<p class="footerLink">Links + <br> <a href="<?php echo $config->home_sina_link?>">SINA MICROBLOG</a></p>
