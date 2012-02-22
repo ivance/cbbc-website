@@ -25,9 +25,11 @@
 			
 			<?php include('common/sidebar.php') ?>
 			
-			<div id="r-col" class="span11">
-					
+			<div id="r-col" class="span9">
+			
+			<div style="width:339px;height:300px;">
 			<?php echo $config->contact_text?>
+			</div>
 
 					
 			</div>

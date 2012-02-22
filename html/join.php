@@ -25,9 +25,11 @@
 			
 			<?php include('common/sidebar.php') ?>
 			
-			<div id="r-col" class="span6 offset5">
-					
-				<?php echo $config->contact_join_us?>
+			<div id="r-col" class="span9">
+			
+			<div style="width:339px;height:300px;">
+			<?php echo $config->contact_join_us?>
+			</div>
 
 					
 			</div>

@@ -185,7 +185,7 @@ body {
   background-image: url(images/texture.png);
   background-position: top center;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:Arial;
   font-size: 12px;
   font-weight: normal;
   line-height: 18px;
@@ -511,7 +511,6 @@ address {
 }
 code, pre {
   padding: 0 3px 2px;
-  font-family: Monaco, Andale Mono, Courier New, monospace;
   font-size: 12px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -544,8 +543,6 @@ html, body {
 }
 #index {
   background-color: #333333;
-  background-image: url(images/index-bg.jpg);
-  background-position: top center;
   height: 100%;
 }
 #header {
@@ -608,14 +605,14 @@ html, body {
 }
 #project_detail {
   display: block;
-  width: 220px;
-  height: 380px;
+  width: 227px;
+  height: 340px;
 }
 #project_detail .project_detail {
   display: block;
 }
 .project_items .project_item {
-  margin-bottom: 1px;
+  margin-bottom: 3px;
   height: 40px;
   padding: 2px;
   cursor: pointer;
@@ -644,7 +641,7 @@ html, body {
 .project_detail {
   display: none;
   background-color: #eeeeee;
-  padding: 20px;
+  padding: 28px 28px 20px 28px;
 }
 .project_detail .d_image {
   margin-bottom: 6px;
@@ -751,7 +748,7 @@ html, body {
   width: 620px;
 }
 .span10 #scrollbar_content {
-  width: 560px;
+  width: 505px;
 }
 .span9 #scrollbar_content {
   width: 500px;
@@ -763,10 +760,10 @@ html, body {
   width: 380px;
 }
 .span6 #scrollbar_content {
-  width: 320px;
+  width: 307px;
 }
 .span5 #scrollbar_content {
-  width: 260px;
+  width: 291px;
 }
 .company-concept h2, .company-concept h3 {
   line-height: 18px;
@@ -780,15 +777,39 @@ html, body {
   margin-bottom: 18px;
 }
 .footerTip {
-  font-size: 10px;
+  font-size: 8px;
   line-height: 14px;
   font-weight: lighter;
   color: #999999;
 }
 #service-concept {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -170px;
-  margin-top: -180px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.clients-list{
+  font-size:12px;
+  line-height:21px;
+  color:#ffffff;
+}
+address dt{
+  font-size:14px;
+  line-height:24px;
+  color:#ffffff;
+}
+address dd{
+  font-size:12px;
+  line-height:21px;
+  color:#b2b2b2;
+}
+.rightConcept{
+  font-size:30px;
+  line-height:30px;
+  color:#222222;
+  font-style:italic;
+}
+.rightConcept a{
+  font-size:10px;
+  line-height:17px;
+  color:#7f7f7f;
 }

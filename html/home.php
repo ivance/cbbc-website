@@ -39,12 +39,7 @@
 
 			<?php include('common/sidebar.php') ?>
 
-			<div id="c-col" class="span7">
-				<div class="welcome">
-					Welcome to cbbc.com.cn
-				</div>
-			</div>
-			<div id="r-col" class="span5">
+			<div id="r-col" class="span5" style="right:170px;">
 				<p class="concept rightConcept"><a href="<?php echo $config->home_news_link?>">news</a> / <a href="<?php echo $config->home_blog_link?>">blog</a> / <a href="<?php echo $config->home_platform_link?>">platform</a></p>
 			</div>
 		</div>

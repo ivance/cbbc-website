@@ -35,14 +35,14 @@
 			
 			<?php include('common/sidebar.php') ?>
 
-			<div id="service-concept" class="span6">
-				<img src="../css/images/service.png" alt="">
-			</div>
-			<div id="r-col" class="span5" style="margin-right:110px">
-				<div id="scrollbar_container-fluid">  
+			<div id="r-col" class="span14">
+				<div id="service-concept" class="span6">
+					<img src="../css/images/service.png" alt="">
+				</div>
+				<div id="scrollbar_container-fluid" style="width:291px;height:372px;margin-left:400px">  
 				    <div id="scrollbar_track"><div id="scrollbar_handle"></div></div>  
 				    <div id="scrollbar_content" style="text-align:justify;">
-						<p><?php echo $config->service_concept?></p>
+						<p style="font-size:12px;color:#ffffff;line-height:21px"><?php echo $config->service_concept?></p>
 					</div>
 				</div>
 			

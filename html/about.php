@@ -38,8 +38,8 @@
 				<div id="scrollbar_container-fluid">  
 				    <div id="scrollbar_track"><div id="scrollbar_handle"></div></div>  
 				    <div id="scrollbar_content">
-				    	<p class="header" style="font-size:20px;margin-left:322px"><?php echo $config->company_about_title?></p>
-				    	<p class="clearfix" style="width:407px;text-align:justify;">
+				    	<p class="header" style="font-size:20px;margin-left:322px;font-style:Italic"><?php echo $config->company_about_title?></p>
+				    	<p class="clearfix" style="width:407px;text-align:justify;font-size:12px">
 						<?php echo $config->company_about_body;?>
 						</p>
 

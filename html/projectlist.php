@@ -61,34 +61,34 @@
 
 			<?php include('common/sidebar.php') ?>
 			
-			<div id="r-col" class="span12">
+			<div id="r-col" class="span14">
 				<div class="span4 pull-left">
 				<div id="project_detail">
 					
 				</div>
 				</div>
-				<div class="span8 pull-right">
+				<div class="span10 pull-right">
 				<div id="scrollbar_container-fluid">  
 				    <div id="scrollbar_track"><div id="scrollbar_handle"></div></div>  
 				    <div id="scrollbar_content">
 					<ul class="project_items">
 						<?php foreach($config->project_list as $project){?>
 						<li class="project_item">
-							<div class="image"><img src="../image/<?php echo $project->pic?>" width="40" alt=""></div>
-							<h2 class="name"><?php echo $project->title?></h2>
-							<p class="info"><?php echo $project->type?> / <?php echo $project->area?> / <?php echo $project->time?></p>
+							<div class="image" style="border:solid #ffffff 1px;"><img src="../image/<?php echo $project->pic?>" width="40" alt=""></div>
+							<h2 class="name" style="font-size:10px;color:#e5e5e5"><?php echo $project->title?></h2>
+							<p class="info" style="font-size:10px;color:#e5e5e5"><?php echo $project->type?> / <?php echo $project->area?> / <?php echo $project->time?></p>
 							<div class="project_detail">
 								<div class="d_image">
-									<img src="../image/<?php echo $project->pic?>" width="180" alt="">
+									<img src="../image/<?php echo $project->pic?>" width="170" alt="">
 								</div>
-								<h4 class="d_name">
+								<h4 class="d_name" style="color:#060001;font-size:8px">
 									<?php echo $project->title?>
 								</h4>
 								<ul class="d_info">
-									<li><strong>Project/</strong> <?php echo $project->title?></li>
-									<li><strong>Type/</strong> <?php echo $project->type?></li>
-									<li><strong>Work/</strong> <?php echo $project->area?></li>
-									<li><strong>Signing Time/</strong> <?php echo $project->time?></li>
+									<li style="color:#221714;font-size:9px"><strong>Project/</strong> <?php echo $project->title?></li>
+									<li style="color:#221714;font-size:9px"><strong>Type/</strong> <?php echo $project->type?></li>
+									<li style="color:#221714;font-size:9px"><strong>Work/</strong> <?php echo $project->area?></li>
+									<li style="color:#221714;font-size:9px"><strong>Signing Time/</strong> <?php echo $project->time?></li>
 								</ul>
 
 								<div class="close">

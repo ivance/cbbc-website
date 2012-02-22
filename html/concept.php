@@ -36,15 +36,16 @@
 
 			<?php include('common/sidebar.php') ?>
 
-			<div id="r-col" class="span10">
-				<div class="span3 pull-left">
-				<img src="../css/images/concept.png" width="120" alt="">
+			<div id="r-col" class="span9">
+				<div class="span3" style="position: absolute;">
+				<img src="../css/images/concept.png" width="146" alt="">
 			</div>
 			<div class="span6 company-concept">
 				<div id="scrollbar_container">  
 				    <div id="scrollbar_track" style="left:500px"><div id="scrollbar_handle"></div></div>  
-				    <div id="scrollbar_content">
-						<h2><?php echo $config->company_concept_title?></h2>
+				    <div id="scrollbar_content" style="padding-left: 183px;">
+						<p class="header" style="font-size:20px;font-style:Italic"><?php echo $config->company_concept_title?></p>
+						<br />
 						<?php echo $config->company_concept_body?>
 
 					</div>
