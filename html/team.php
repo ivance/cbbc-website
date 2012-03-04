@@ -6,12 +6,12 @@ $team_pic = explode(';',$config->team_pic);
 <head>
 	<meta charset="UTF-8">
 	<title>CBBC</title>
-	<link rel="stylesheet" href="../css/style.css">
-	<script type="text/javascript" src="../js/lib/prototype.js"></script>
-	<script type="text/javascript" src="../js/lib/slider.js"></script>
-	<script type="text/javascript" src="../js/livepipe.js"></script>
-	<script type="text/javascript" src="../js/scrollbar.js"></script>
-	<script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/lib/prototype.js"></script>
+	<script type="text/javascript" src="js/lib/slider.js"></script>
+	<script type="text/javascript" src="js/livepipe.js"></script>
+	<script type="text/javascript" src="js/scrollbar.js"></script>
+	<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
 	<script type="text/javascript">
 			document.observe('dom:loaded',function(){				
 				var scrollbar = new Control.ScrollBar('scrollbar_content','scrollbar_track');		
@@ -29,7 +29,7 @@ $team_pic = explode(';',$config->team_pic);
 <body>
 	<div id="header">
 		<div id="header-inner" class="container-fluid">
-		<a href="../index.html" id="logo"><img src="../assets/logo.png" alt=""></a>
+		<a href="index.html" id="logo"><img src="assets/logo.png" alt=""></a>
 		</div>
 	</div>
 	<div id="main" class="container-fluid">
@@ -41,7 +41,7 @@ $team_pic = explode(';',$config->team_pic);
 			<div id="r-col" class="span12">
 			<div id="team_pic" class="span5 pull-left">
 				<?php foreach($team_pic as $pic){?>
-				<a><img src="../image/<?php echo $pic?>" height="340" alt=""></a>
+				<a><img src="image/<?php echo $pic?>" height="340" alt=""></a>
 				<?php } ?>
 			</div>
 			<div class="span5" style="margin-left:290px">

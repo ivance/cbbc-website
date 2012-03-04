@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CBBC</title>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/jquery.jscrollpane.css">
-	<script type="text/javascript" src="../js/lib/prototype.js"></script>
-	<script type="text/javascript" src="../js/lib/slider.js"></script>
-	<script type="text/javascript" src="../js/livepipe.js"></script>
-	<script type="text/javascript" src="../js/scrollbar.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css">
+	<script type="text/javascript" src="js/lib/prototype.js"></script>
+	<script type="text/javascript" src="js/lib/slider.js"></script>
+	<script type="text/javascript" src="js/livepipe.js"></script>
+	<script type="text/javascript" src="js/scrollbar.js"></script>
 	<script type="text/javascript">
 			document.observe('dom:loaded',function(){				
 				var scrollbar = new Control.ScrollBar('scrollbar_content','scrollbar_track');		
@@ -26,7 +26,7 @@
 <body>
 	<div id="header">
 		<div id="header-inner" class="container-fluid">
-		<a href="../index.html" id="logo"><img src="../assets/logo.png" alt=""></a>
+		<a href="index.html" id="logo"><img src="assets/logo.png" alt=""></a>
 		</div>
 	</div>
 	<div id="main" class="container-fluid">
@@ -37,7 +37,7 @@
 
 			<div id="r-col" class="span14">
 				<div id="service-concept" class="span6">
-					<img src="../css/images/service.png" alt="">
+					<img src="css/images/service.png" alt="">
 				</div>
 				<div id="scrollbar_container-fluid" style="width:291px;height:372px;margin-left:400px">  
 				    <div id="scrollbar_track"><div id="scrollbar_handle"></div></div>  

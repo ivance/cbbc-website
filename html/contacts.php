@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CBBC</title>
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<style>
 	
 	.navsubmenu{
@@ -16,7 +16,7 @@
 <body>
 	<div id="header">
 		<div id="header-inner" class="container-fluid">
-		<a href="../index.html" id="logo"><img src="../assets/logo.png" alt=""></a>
+		<a href="index.html" id="logo"><img src="assets/logo.png" alt=""></a>
 		</div>
 	</div>
 	<div id="main" class="container-fluid">

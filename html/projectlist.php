@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CBBC</title>
-	<link rel="stylesheet" href="../css/style.css">
-	<script type="text/javascript" src="../js/lib/prototype.js"></script>
-	<script type="text/javascript" src="../js/lib/slider.js"></script>
-	<script type="text/javascript" src="../js/livepipe.js"></script>
-	<script type="text/javascript" src="../js/scrollbar.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/lib/prototype.js"></script>
+	<script type="text/javascript" src="js/lib/slider.js"></script>
+	<script type="text/javascript" src="js/livepipe.js"></script>
+	<script type="text/javascript" src="js/scrollbar.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript">
 			var $j = jQuery.noConflict();
@@ -52,7 +52,7 @@
 <body>
 	<div id="header">
 		<div id="header-inner" class="container-fluid">
-		<a href="../index.html" id="logo"><img src="../assets/logo.png" alt=""></a>
+		<a href="index.html" id="logo"><img src="assets/logo.png" alt=""></a>
 		</div>
 	</div>
 	<div id="main" class="container-fluid">
@@ -74,12 +74,12 @@
 					<ul class="project_items">
 						<?php foreach($config->project_list as $project){?>
 						<li class="project_item">
-							<div class="image" style="border:solid #ffffff 1px;"><img src="../image/<?php echo $project->pic?>" width="40" alt=""></div>
+							<div class="image" style="border:solid #ffffff 1px;"><img src="image/<?php echo $project->pic?>" width="40" alt=""></div>
 							<h2 class="name" style="font-size:10px;color:#e5e5e5"><?php echo $project->title?></h2>
 							<p class="info" style="font-size:10px;color:#e5e5e5"><?php echo $project->type?> / <?php echo $project->area?> / <?php echo $project->time?></p>
 							<div class="project_detail">
 								<div class="d_image">
-									<img src="../image/<?php echo $project->pic?>" width="170" alt="">
+									<img src="image/<?php echo $project->pic?>" width="170" alt="">
 								</div>
 								<h4 class="d_name" style="color:#060001;font-size:8px">
 									<?php echo $project->title?>

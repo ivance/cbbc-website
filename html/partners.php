@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CBBC</title>
-	<link rel="stylesheet" href="../css/style.css">
-	<script type="text/javascript" src="../js/lib/prototype.js"></script>
-	<script type="text/javascript" src="../js/lib/slider.js"></script>
-	<script type="text/javascript" src="../js/livepipe.js"></script>
-	<script type="text/javascript" src="../js/scrollbar.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/lib/prototype.js"></script>
+	<script type="text/javascript" src="js/lib/slider.js"></script>
+	<script type="text/javascript" src="js/livepipe.js"></script>
+	<script type="text/javascript" src="js/scrollbar.js"></script>
 	<script type="text/javascript">
 			document.observe('dom:loaded',function(){				
 				var scrollbar = new Control.ScrollBar('scrollbar_content','scrollbar_track');		
@@ -25,7 +25,7 @@
 <body>
 	<div id="header">
 		<div id="header-inner" class="container-fluid">
-		<a href="../index.html" id="logo"><img src="../assets/logo.png" alt=""></a>
+		<a href="index.html" id="logo"><img src="assets/logo.png" alt=""></a>
 		</div>
 	</div>
 	<div id="main" class="container-fluid">
@@ -41,7 +41,7 @@
 						<ul class="media-list partners-list">
 						<?php foreach($config->partner_list as $partner){?>
 						<li class="partner">
-							<div class="image"><img src="../image/<?php echo $partner->pic?>" width="227" alt=""></div>
+							<div class="image"><img src="image/<?php echo $partner->pic?>" width="227" alt=""></div>
 							<?php echo $partner->text?>
 						</li>
 						<?php }?>
