@@ -35,10 +35,11 @@
 			
 			<?php include('common/sidebar.php') ?>
 
-			<div id="r-col" class="span14">
-				<div id="service-concept" class="span6">
+				<div id="service-concept" class="span6" style="left:500px">
 					<img src="css/images/service.png" alt="">
 				</div>
+
+			<div id="r-col" class="span14">
 				<div id="scrollbar_container-fluid" style="width:291px;height:372px;margin-left:400px">  
 				    <div id="scrollbar_track"><div id="scrollbar_handle"></div></div>  
 				    <div id="scrollbar_content" style="text-align:justify;">
