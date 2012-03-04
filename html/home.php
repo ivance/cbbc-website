@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="js/lib/slider.js"></script>
 	<script type="text/javascript" src="js/livepipe.js"></script>
 	<script type="text/javascript" src="js/scrollbar.js"></script>
+	<script type="text/javascript" src="js/swfobject.js"></script>
 	<style>
 	.navMenu{
 		text-align: right;
@@ -50,13 +51,16 @@
 						$host = $_SERVER['HTTP_HOST'];
 						if($from == NULL || strpos($from,$host) === false){
 					?>
-                    <object type="application/x-shockwave-flash" data="assets/movie.swf" width="820" height="300" id="blog_index_flash_ff">
-                        <param name="quality" value="high" />
-                        <param name="wmode" value="transparent" />
-                        <param name="menu" value="false">
-                        <param name="allowScriptAccess" value="sameDomain" />
-                        <param name="allowFullScreen" value="true" />
-                    </object>
+						<div id="flashcontent"> 
+							<img src="assets/movie.png" alt="">
+						</div> 
+						<script type="text/javascript"> 
+						var so = new sinaFlash("assets/movie.swf", "mymovie", "820", "300", "7", "#ffffff"); 
+						so.addParam("quality", "best");
+						so.addParam("wmode", "transparent");
+						so.addParam("menu", "false");
+						so.write("flashcontent"); 
+						</script>
                     <?php }else{ ?>
                     	<img src="assets/movie.png" alt="">
                     <?php } ?>
