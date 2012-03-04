@@ -39,9 +39,7 @@
 
 			<?php include('common/sidebar.php') ?>
 
-			<div id="r-col" class="span18">
-
-				<div style="float:left;margin-top:90px">
+				<div style="margin-top:90px;position:absolute;left:20%;">
 					<?php
 						if(isset($_SERVER['HTTP_REFERER'])){
 							$from = $_SERVER['HTTP_REFERER'];
@@ -64,6 +62,7 @@
                     <?php } ?>
             	</div>
 
+			<div id="r-col" class="span4">
 				<p class="concept"><a href="<?php echo $config->home_news_link?>">news</a> / <a href="<?php echo $config->home_blog_link?>">blog</a> / <a href="<?php echo $config->home_platform_link?>">platform</a></p>
 			</div>
 		</div>
