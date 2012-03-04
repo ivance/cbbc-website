@@ -39,8 +39,27 @@
 
 			<?php include('common/sidebar.php') ?>
 
-			<div id="r-col" class="span5" style="right:170px;">
-				<p class="concept rightConcept"><a href="<?php echo $config->home_news_link?>">news</a> / <a href="<?php echo $config->home_blog_link?>">blog</a> / <a href="<?php echo $config->home_platform_link?>">platform</a></p>
+			<div id="r-col" class="span18">
+
+				<div style="float:left;margin-top:90px">
+					<?php
+						$from = $_SERVER['HTTP_REFERER'];
+						$host = $_SERVER['HTTP_HOST'];
+						if($from == NULL || strpos($from,$host) === false){
+					?>
+                    <object type="application/x-shockwave-flash" data="assets/movie.swf" width="820" height="300" id="blog_index_flash_ff">
+                        <param name="quality" value="high" />
+                        <param name="wmode" value="transparent" />
+                        <param name="menu" value="false">
+                        <param name="allowScriptAccess" value="sameDomain" />
+                        <param name="allowFullScreen" value="true" />
+                    </object>
+                    <?php }else{ ?>
+                    	<img src="assets/movie.png" alt="">
+                    <?php } ?>
+            	</div>
+
+				<p class="concept"><a href="<?php echo $config->home_news_link?>">news</a> / <a href="<?php echo $config->home_blog_link?>">blog</a> / <a href="<?php echo $config->home_platform_link?>">platform</a></p>
 			</div>
 		</div>
 		</div>
