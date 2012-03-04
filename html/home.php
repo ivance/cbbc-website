@@ -43,7 +43,12 @@
 
 				<div style="float:left;margin-top:90px">
 					<?php
-						$from = $_SERVER['HTTP_REFERER'];
+						if(isset($_SERVER['HTTP_REFERER'])){
+							$from = $_SERVER['HTTP_REFERER'];
+						}else{
+							$from = NULL;
+						}
+						
 						$host = $_SERVER['HTTP_HOST'];
 						if($from == NULL || strpos($from,$host) === false){
 					?>
