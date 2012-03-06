@@ -43,6 +43,7 @@
 				<div id="scrollbar_container-fluid" style="width:291px;height:372px;margin-left:400px">  
 				    <div id="scrollbar_track"><div id="scrollbar_handle"></div></div>  
 				    <div id="scrollbar_content" style="text-align:justify;">
+				    	<p class="header contentHeader">Service philosophy</p>
 						<p style="font-size:12px;color:#ffffff;line-height:21px"><?php echo $config->service_concept?></p>
 					</div>
 				</div>

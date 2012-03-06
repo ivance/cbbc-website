@@ -45,7 +45,7 @@ $team_pic = explode(';',$config->team_pic);
 				<?php } ?>
 			</div>
 			<div class="span5" style="margin-left:290px">
-			<p class="header" style="font-size:20px;">TEAM</p>
+			<p class="header contentHeader">Team</p>
 					<p style="text-align:justify;"><?php echo $config->team_text?></p>
 			</div>
 			</div>
