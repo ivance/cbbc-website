@@ -16,12 +16,6 @@
 	.rightConcept{
 		float:right;
 	}
-	.footerTip{
-		font-size:10px;
-		line-height: 14px;
-		font-weight: lighter;
-		color:#999999;
-	}
 	.footerLink{
 		color:#0E65A3;
 	}
@@ -29,10 +23,6 @@
 </head>
 <body id="index">
 	<div id="header" >
-		<div id="header-inner" class="container-fluid">
-			
-		<a href="" id="logo"><img src="assets/logo.png" alt=""></a>
-		</div>
 	</div>
 	<div id="main" class="container-fluid">
 		<div id="main-inner">
@@ -67,7 +57,7 @@
             	</div>
 
 			<div id="r-col" class="span4">
-				<p class="concept"><a href="<?php echo $config->home_news_link?>">news</a> / <a href="<?php echo $config->home_blog_link?>">blog</a> / <a href="<?php echo $config->home_platform_link?>">platform</a></p>
+				<p class="concept"><a href="<?php echo $config->home_news_link?>">NEW</a> / <a href="<?php echo $config->home_blog_link?>">BLOG</a> / <a href="<?php echo $config->home_platform_link?>">PLATFORM</a></p>
 			</div>
 		</div>
 		</div>
