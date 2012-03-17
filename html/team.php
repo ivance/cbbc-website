@@ -77,7 +77,7 @@ $.fn.slide = function(settings){
 	})
 };
 
-$("#team_pic").slide({defertime: 3000,fadingtime: 1000,slides:<?php echo count($team_pic)?>});
+$("#team_pic").slide({defertime: 2000,fadingtime: 1000,slides:<?php echo count($team_pic)?>});
 </script>
 </body>
 </html>
