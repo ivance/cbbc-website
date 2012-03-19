@@ -39,9 +39,9 @@ $team_pic = explode(';',$config->team_pic);
 			<?php include('common/sidebar.php') ?>
 			
 			<div id="r-col" class="span12">
-			<div id="team_pic" class="span5 pull-left">
+			<div id="team_pic" stype="height:340px;width:227;position:relative" class="span5 pull-left">
 				<?php foreach($team_pic as $pic){?>
-				<a><img src="image/<?php echo $pic?>" height="340" alt=""></a>
+				<img src="image/<?php echo $pic?>" height="340" alt="">
 				<?php } ?>
 			</div>
 			<div class="span5" style="margin-left:290px">

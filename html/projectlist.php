@@ -14,6 +14,8 @@
      
 		    // Use jQuery via $j(...)
 		    $j(document).ready(function(){
+		    	var flag=false;
+
 		      $j('.project_item').each(function(){
 		      	$j(this).hover(function(){
 		      		$j(this).addClass('hover');
@@ -28,12 +30,23 @@
 		      		$j('#project_detail .close span').bind('click', function(){
 		      			$j('#project_detail').empty();
 		      		});
+		      		flag =true;
 		      	})
-
 		      });
 
-		     
-		      
+		      $j(document).bind('click', function (e) {
+		    	try {
+		      		var obj = e.target;
+		      		var a = $j(obj).closest("#bigpic");
+		      		if (a.length == 1) return;
+		      		if(!flag){
+		      			$j('#project_detail').empty();
+		      		}
+		      	} catch (err) {
+		      		$j('#project_detail').empty();
+		      	}
+		      	flag=false;
+		      });
 		    });
 
 			document.observe('dom:loaded',function(){				
@@ -77,7 +90,7 @@
 							<div class="image" style="border:solid #ffffff 1px;"><img src="image/<?php echo $project->pic?>" width="40" alt=""></div>
 							<h2 class="name" style="font-size:10px;color:#e5e5e5"><?php echo $project->title?></h2>
 							<p class="info" style="font-size:10px;color:#e5e5e5"><?php echo $project->type?> / <?php echo $project->area?> / <?php echo $project->time?></p>
-							<div class="project_detail">
+							<div id="bigpic" class="project_detail">
 								<div class="d_image">
 									<img src="image/<?php echo $project->pic?>" width="170" alt="">
 								</div>
