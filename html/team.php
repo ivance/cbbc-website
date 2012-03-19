@@ -7,16 +7,20 @@ $team_pic = explode(';',$config->team_pic);
 	<meta charset="UTF-8">
 	<title>CBBC</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+	<?php/*
 	<script type="text/javascript" src="js/lib/prototype.js"></script>
 	<script type="text/javascript" src="js/lib/slider.js"></script>
 	<script type="text/javascript" src="js/livepipe.js"></script>
 	<script type="text/javascript" src="js/scrollbar.js"></script>
-	<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+	
+	
 	<script type="text/javascript">
 			document.observe('dom:loaded',function(){				
 				var scrollbar = new Control.ScrollBar('scrollbar_content','scrollbar_track');		
 			});	 
 	</script>
+	*/?>
 	<style>
 	
 	.navSubmenu{
