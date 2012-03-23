@@ -39,7 +39,7 @@
 				    <div id="scrollbar_track"><div id="scrollbar_handle"></div></div>  
 				    <div id="scrollbar_content">
 				    	<p class="header contentHeader" style="width:407px;"><?php echo $config->company_about_title?></p>
-				    	<p class="clearfix" style="width:407px;text-align:justify;font-size:12px">
+				    	<p class="clearfix textContent">
 						<?php echo $config->company_about_body;?>
 						</p>
 

@@ -99,7 +99,7 @@
 								</h4>
 								<ul class="d_info">
 									<li style="color:#221714;font-size:9px"><strong>Project/</strong> <?php echo $project->title?></li>
-									<li style="color:#221714;font-size:9px"><strong>Type/</strong> <?php echo $project->type?></li>
+									<li style="color:#221714;font-size:9px"><strong>Company/</strong> <?php echo $project->type?></li>
 									<li style="color:#221714;font-size:9px"><strong>Work/</strong> <?php echo $project->area?></li>
 									<li style="color:#221714;font-size:9px"><strong>Signing Time/</strong> <?php echo $project->time?></li>
 								</ul>

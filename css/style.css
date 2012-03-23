@@ -819,3 +819,8 @@ address dd{
   font-style:Italic;
   text-align:right;
 }
+.textContent{
+  width:407px;
+  text-align:justify;
+  font-size:12px;
+}
