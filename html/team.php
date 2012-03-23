@@ -8,8 +8,7 @@ $team_pic = explode(';',$config->team_pic);
 	<title>CBBC</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
-	<?php
-	/*
+
 	<script type="text/javascript" src="js/lib/prototype.js"></script>
 	<script type="text/javascript" src="js/lib/slider.js"></script>
 	<script type="text/javascript" src="js/livepipe.js"></script>
@@ -21,8 +20,8 @@ $team_pic = explode(';',$config->team_pic);
 				var scrollbar = new Control.ScrollBar('scrollbar_content','scrollbar_track');		
 			});	 
 	</script>
-	*/
-	?>
+
+
 	<style>
 	
 	.navSubmenu{
@@ -51,8 +50,13 @@ $team_pic = explode(';',$config->team_pic);
 				<?php } ?>
 			</div>
 			<div class="span5" style="margin-left:290px">
-			<p class="header contentHeader">Team</p>
+				<div id="scrollbar_container" style="width:390px;">  
+				<div id="scrollbar_track"><div id="scrollbar_handle"></div></div> 
+				<div id="scrollbar_content" style="margin-right:150px">
+					<p class="header contentHeader">Team</p>
 					<p style="text-align:justify;"><?php echo $config->team_text?></p>
+				</div>
+				</div> 
 			</div>
 			</div>
 		</div>
@@ -60,30 +64,31 @@ $team_pic = explode(';',$config->team_pic);
 	</div>
 <?php include('common/footer.php') ?>
 <script type="text/javascript">
-$.fn.slide = function(settings){
+var $j = jQuery.noConflict();
+$j.fn.slide = function(settings){
 	return this.each(function(){
-	    $.extend(this, {defertime:7000, btnopacity:0.9, showbutton: true,fadingtime: 800,slides:3}, settings);
+	    $j.extend(this, {defertime:7000, btnopacity:0.9, showbutton: true,fadingtime: 800,slides:3}, settings);
 	    var _c = this, index = 0, timer,slides = slides?slides:_c.slides;
 		// 隐藏切图中的a
-		$(_c).find('.clip-image').children('a').css({zIndex:slides, display:'none'});
+		$j(_c).find('.clip-image').children('a').css({zIndex:slides, display:'none'});
 	   
-	    $(_c).hover(function(){
+	    $j(_c).hover(function(){
 	        clearInterval(timer);
 	    },function(){
 	        timer = setInterval(function(){sliding(++index%slides)}, _c.defertime);
 	    }).trigger("mouseleave");
 	
 	    function sliding(n){
-	        $(_c).find("img").stop().animate({opacity:0},_c.fadingtime).css('z-index','').end().find("img").eq(n).stop().css('z-index',slides).animate({opacity:1},_c.fadingtime);
-			$(_c).find('.clip-image').children('a').hide();
-			$(_c).find("img").eq(n).parent('.clip-image').children('a').show();
+	        $j(_c).find("img").stop().animate({opacity:0},_c.fadingtime).css('z-index','').end().find("img").eq(n).stop().css('z-index',slides).animate({opacity:1},_c.fadingtime);
+			$j(_c).find('.clip-image').children('a').hide();
+			$j(_c).find("img").eq(n).parent('.clip-image').children('a').show();
 	    };
 	   
-	    $(_c).find("img").css({'opacity':0,'position':'absolute','top':'0','left':'0'}).eq(0).css({'z-index':1,'opacity':1});
+	    $j(_c).find("img").css({'opacity':0,'position':'absolute','top':'0','left':'0'}).eq(0).css({'z-index':1,'opacity':1});
 	})
 };
 
-$("#team_pic").slide({defertime: 2000,fadingtime: 1000,slides:<?php echo count($team_pic)?>});
+$j("#team_pic").slide({defertime: 2000,fadingtime: 1000,slides:<?php echo count($team_pic)?>});
 </script>
 </body>
 </html>
