@@ -615,9 +615,7 @@ html, body {
   display: block;
 }
 .project_items .project_item {
-  margin-bottom: 3px;
-  height: 40px;
-  padding: 2px;
+  height: 50px;
   cursor: pointer;
   zoom: 1;
 }
