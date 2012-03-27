@@ -191,6 +191,9 @@ body {
   line-height: 18px;
   color: #e6e6e6;
 }
+.chn-text {
+  font-family:"黑体";
+}
 .container {
   width: 1000px;
   margin-left: auto;
