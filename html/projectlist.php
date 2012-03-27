@@ -10,8 +10,14 @@
 	<script type="text/javascript" src="js/scrollbar.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript">
+	
 			var $j = jQuery.noConflict();
-     
+
+			function clickSound(){
+				var _s = document.getElementById('snd'); 
+				_s.src = "assets/click.wav";
+			}
+
 		    // Use jQuery via $j(...)
 		    $j(document).ready(function(){
 		    	var flag=false;
@@ -24,6 +30,7 @@
 		      	});
 
 		      	$j(this).click(function(){
+		      		clickSound();
 		      		$j('#project_detail').empty();
 		      		var detailToShow = $j(this).find('.project_detail');
 		      		detailToShow.clone().appendTo('#project_detail');
@@ -63,6 +70,7 @@
 	</style>
 </head>
 <body>
+	<bgsound src="assets/click.wav" autostart=true loop=infinite>
 	<div id="header">
 		<div id="header-inner" class="container-fluid">
 		<a href="index.html" id="logo"><img src="assets/logo.png" alt=""></a>
